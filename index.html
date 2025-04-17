@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Servicios Web Públicos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Explora Países y Publicaciones</h1>
+  </header>
+
+  <section id="paises">
+    <h2>🌍 Lista de Países</h2>
+    <select id="selectRegion">
+      <option value="europe">Europa</option>
+      <option value="asia">Asia</option>
+      <option value="americas">Américas</option>
+    </select>
+    <div id="listaPaises"></div>
+  </section>
+
+  <section id="posts">
+    <h2>📝 Publicaciones Simuladas (JSONPlaceholder)</h2>
+    <button id="btnCargarPosts">Cargar Posts</button>
+    <div id="listaPosts"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
