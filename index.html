@@ -6,6 +6,7 @@
   <title>Explorador de Países y Publicaciones</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <div class="container">
@@ -27,6 +28,12 @@
           <option value="oceania">Oceanía</option>
         </select>
       </div>
+      <div class="search-container">
+        <input type="text" id="searchCountry" placeholder="Buscar país..." class="search-input">
+        <button id="btnSearch" class="search-button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
       <div id="listaPaises" class="results-container"></div>
     </section>
 
@@ -38,10 +45,21 @@
       </button>
       <div id="listaPosts" class="results-container"></div>
     </section>
+
+    <section id="stats">
+      <h2><i class="fas fa-chart-bar"></i> Estadísticas</h2>
+      <div class="chart-container">
+        <canvas id="populationChart"></canvas>
+      </div>
+    </section>
   </div>
 
+  <button id="themeToggle" class="theme-toggle">
+    <i class="fas fa-moon"></i>
+  </button>
+
   <footer>
-    <p>Creado con ❤️ usando REST Countries y JSONPlaceholder</p>
+    <p>Creado en equipo usando REST Countries y JSONPlaceholder</p>
   </footer>
 
   <script src="app.js"></script>
