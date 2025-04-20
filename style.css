@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Fuente y reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,71 +6,96 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #fce4ec);
   color: #333;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  min-height: 100vh;
 }
 
-/* Encabezado */
 header {
-  background-color: #4CAF50;
+  background-color: #1976d2;
   color: white;
   padding: 20px 40px;
   width: 100%;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
+}
+
+/* Main container */
+main {
+  width: 100%;
+  max-width: 1000px;
 }
 
 /* Secciones */
 section {
   background-color: white;
-  width: 100%;
-  max-width: 800px;
   padding: 20px;
   margin-bottom: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* Títulos */
 h2 {
   margin-bottom: 15px;
-  color: #4CAF50;
+  color: #1976d2;
+  font-size: 24px;
 }
 
 /* Select y botón */
 select, button {
-  padding: 10px 15px;
+  padding: 12px 18px;
   font-size: 16px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #bbb;
   border-radius: 8px;
-  outline: none;
+  margin-bottom: 20px;
   transition: all 0.3s ease;
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #43a047;
   color: white;
-  cursor: pointer;
+  border: none;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #388e3c;
+  transform: scale(1.03);
 }
 
-/* Listas */
-ul {
-  list-style: none;
-  padding-left: 0;
+/* Contenedor de tarjetas */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
 
-li {
-  margin-bottom: 10px;
-  line-height: 1.6;
+/* Tarjetas */
+.card {
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
 }
