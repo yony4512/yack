@@ -5,27 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Servicios Web Públicos</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Explora Países y Publicaciones</h1>
+    <h1>🌐 Explora Países y Publicaciones</h1>
   </header>
 
-  <section id="paises">
-    <h2>🌍 Lista de Países</h2>
-    <select id="selectRegion">
-      <option value="europe">Europa</option>
-      <option value="asia">Asia</option>
-      <option value="americas">Américas</option>
-    </select>
-    <div id="listaPaises"></div>
-  </section>
+  <main>
+    <section id="paises">
+      <h2>🌍 Lista de Países por Región</h2>
+      <select id="selectRegion">
+        <option value="europe">Europa</option>
+        <option value="asia">Asia</option>
+        <option value="americas">Américas</option>
+      </select>
+      <div id="listaPaises" class="card-container"></div>
+    </section>
 
-  <section id="posts">
-    <h2>📝 Publicaciones Simuladas (JSONPlaceholder)</h2>
-    <button id="btnCargarPosts">Cargar Posts</button>
-    <div id="listaPosts"></div>
-  </section>
+    <section id="posts">
+      <h2>📝 Publicaciones Simuladas</h2>
+      <button id="btnCargarPosts">Cargar Posts</button>
+      <div id="listaPosts" class="card-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Yack Dev</p>
+  </footer>
 
   <script src="app.js"></script>
 </body>
